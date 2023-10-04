@@ -1,0 +1,125 @@
+.header {
+    height: 70px;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.9);
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+    .header__left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header__left > img {
+        width: 60px;
+        height: 60px;
+        animation: ease-in;
+        object-fit: contain;
+
+        &:hover {
+            box-shadow: 0px 0px 15px 0px;
+            color: #74EBD5;
+            cursor: pointer;
+
+        }
+    }
+
+    .header__left > h1 {
+        display: flex;
+        align-items: center;
+        margin: 5px 5px;
+        padding: 2px 2px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        align-items: center;
+        animation: ease-in;
+        color: #FFFFFF;
+        text-shadow: -1px 0 0 #000000, 1px 1px 0 #000000,
+                        2px -1px 0 #000000, 3px 0 0 #000000;
+
+        &:hover {
+            box-shadow: 0px 0px 15px 0px;
+            color: #A9C9FF;
+            cursor: pointer;
+        }
+    }
+    .header__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header__info {
+            display: flex;
+            justify-content: center;
+
+            
+            .MuiAvatar-root.MuiAvatar-circle.MuiAvatar-colorDefault {
+                display: flex;
+                transition: 0.3s;
+                align-items: center;
+                animation: ease-in;
+
+                &:hover {
+                    box-shadow: 0px 0px 15px 0px;
+                }
+            
+            }
+            
+            svg.MuiSvgIcon-root.MuiAvatar-fallback {
+                color: whitesmoke;
+                transition: transform 0.3s;
+
+                &:hover {
+                    color: #74EBD5;
+                }
+            }
+
+            .avatar__info {
+                display: flex;
+                flex-direction: column;
+                h4 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    letter-spacing: 1px;
+                    margin-bottom: 1px;
+                    color: whitesmoke;
+                    transition: transform 0.3s;
+    
+                    &:hover {
+                        transform: scale3d(1.1);
+                        color: black;
+                    }
+                }
+                
+                small {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    letter-spacing: 1px;
+                    margin-bottom: 1px;
+                    color: black;
+                    transition: transform 0.3s;
+                    font-weight: bold;
+    
+                    &:hover {
+                        transform: scale3d(1.1);
+                        color: whitesmoke;
+                    }
+                }
+    
+            }
+
+        }
+    }
+
+}

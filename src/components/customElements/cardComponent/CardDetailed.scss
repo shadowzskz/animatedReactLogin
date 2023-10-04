@@ -1,0 +1,25 @@
+.cardDetailed {
+    width: 675px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    border-radius: 33px;
+    align-items: center;
+    animation: ease-in;
+
+    &:hover {
+        transform: scale (1.1);
+        box-shadow: 0px 0px 15px 0px;
+    }
+
+    .button {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+}

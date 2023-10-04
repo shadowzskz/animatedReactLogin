@@ -1,0 +1,12 @@
+.details {
+    margin-top: 20px;
+    padding-top: 20px;
+    
+    .details__grid {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

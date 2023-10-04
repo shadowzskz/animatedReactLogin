@@ -1,0 +1,44 @@
+.dash {
+    display: flex;
+    flex-direction: column;
+    .header {
+        margin:150px;
+        width: 39%;
+        padding: 20px 0px;
+        
+        .header__content {
+            width: 200px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px -5px;
+            padding: 20px;
+            transition: 0.3ms;
+    
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 0px 15px 0px;
+            }
+    
+            .header__info {
+                margin: 0px;
+                margin-bottom: 14px;
+                padding: 0px;
+            }
+    
+            .header__btn {
+                margin: 0px 2px;
+                border: solid;
+                border-radius: 10px;
+                width: 50%;
+                align-items: center;
+                padding: 2px 4px;
+                color: #129cfc;
+                background: whitesmoke;
+                text-decoration: none;
+    
+                &:hover {
+                    background: rgba(27, 156, 252, 0.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+$main-color: black;
+.right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 97%;
+    background-color: #6285cf;
+    width: 60%;
+    position: absolute;
+    right: -34%;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    margin-top: 21px;
+    cursor: pointer;
+    border-radius: 33px;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+
+
+    &.right {
+        right: -20%;
+        align-items: flex-end;
+        top: -1px;
+        &:hover {
+        right: -30%;
+            .text {
+                color: $main-color;
+            }
+        }
+    }
+    &.left {
+        right: 52%;
+        align-items: flex-start;
+        top: -1px;
+        &:hover {
+        right: 70%;
+        .text {
+            color: $main-color;
+        }
+        }
+    }
+
+    .text {
+        font-size: 21px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}
